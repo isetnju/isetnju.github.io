@@ -1,0 +1,35 @@
+# jemdoc: menu{MENU}{example.html}
+# jemdoc: addcss{bibtex.css}
+\n
+~~~
+{}{img_left}{images/guq.jpg}{}{120px}{160px}{}
+= Qing Gu \n
+Professor \n
+[https://cs.nju.edu.cn/ Department of Computer Science and Technology] \n
+[https://www.nju.edu.cn/ Nanjing University] \n
+[guq@nju.edu.cn]
+~~~
+
+
+== About me
+I received my Ph.D. degree from the Department of Computer Science and Technology, Nanjing University, in 2001. I am currently working as a professor at the Department of Computer Science and Technology, Nanjing University. My research is focused on software maintenance, image processing, and machine learning, as well as their applications.
+
+== Research
+
+My research interests include
+
+- Software Maintenance,
+- Image Processing, and
+- Machine Learning.
+
+More research information by visiting our [../index.html *iSet*] group.
+
+== Open Positions
+
+Ph.D. and Master's Positions We have positions available for highly-motivated Ph.D. and Master's students starting in Fall 2017 and later. Be sure to attach your resume in pdf or plain text format with your email.
+
+== Contacts
+Room 608, CS building \n
+Xianlin Campus  \n
+Nanjing University, 210023 \n
+Tel: +86-025-89686550 \n

@@ -1,0 +1,23 @@
+VERSION HISTORY of PubList
+
+Version 2014-05-20
+------------------
+- Now field "pllinks" can include complete URLs instead of only local links, for example [LINK]:http://somewebsite.com will produce a correct link to http://somewebsite.com under the description LINK.
+
+Version 2011-02-11
+------------------
+- Changed BibTeX field "filelinks" to "pllinks", which contains links associated with the item (e.g. link to an online PDF file, link to code).
+- Added BibTeX field "plstyle" for customizing the display of an item.
+- Added more entries to the CSS file.
+
+Version 2011-01-12
+------------------
+- Fixed errors that do not close HTML tags of the BibTeX code section (which caused IE fail to display the full list of items).
+
+Version 2010-10-31
+------------------
+- Fixed several minor errors.
+
+Version 2010-09-29
+------------------
+- First release.
