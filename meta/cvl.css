@@ -1,0 +1,142 @@
+h1,h2,h4
+{
+    width: 100%;
+    font-family: "Palatino Linotype", "Palatino", "Georgia", "Times New Roman", serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 1.0em;
+    /* margin-bottom: 0.5em; */
+    color: #321E1D;
+}
+
+div.logo
+{
+    border-radius: 15px;
+    background-color: #73000a;
+}
+
+div.links
+{
+    text-align: center;
+}
+
+p.project
+{
+    width: 100%;
+    font-family: "Palatino Linotype", "Palatino", "Georgia", "Times New Roman", serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 1.0em;
+    color: #321E1D;
+}
+
+p.contact
+{
+    text-align: center;
+}
+
+p.paper
+{
+    font-size: medium;
+    text-align: left;
+    margin-left: 10px;
+}
+
+p.abstract
+{
+    display: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+img#show
+{
+    display: block;
+    margin: auto;
+}
+
+img.project
+{
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 200px;
+}
+
+img.paper
+{
+    display: block;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+    width: 150px;
+    height: 200px;
+}
+
+img.awards
+{
+    display: block;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+    width: 150px;
+}
+
+img.people
+{
+    display: block;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+    height: 192px;
+    width: 128px;
+}
+p.people
+{
+    font-family: "Palatino Linotype", "Palatino", "Georgia", "Times New Roman", serif;
+    font-size: larger;
+    text-align: center;
+    margin-top: 1.0em;
+    color: #321E1D;
+}
+
+p.member
+{
+    font-size: medium;
+    text-align: left;
+    margin-left: 10px;
+}
+
+div.news
+{
+    /* width: 100%; */
+    font-family: "Palatino Linotype", "Palatino", "Georgia", "Times New Roman", serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: x-large;
+    text-align: center;
+    color: #321E1D;
+}
+
+div.newsfoot
+{
+    /* font-variant: normal; */
+    font-size: medium;
+}
+
+div.newstm
+{
+    font-family: "Palatino Linotype", "Palatino", "Georgia", "Times New Roman", serif;
+    font-size: large;
+    text-align: right;
+}
+
+div.newsdat
+{
+    font-family: "Palatino Linotype", "Palatino", "Georgia", "Times New Roman", serif;
+    font-size: large;
+    text-align: left;
+}
