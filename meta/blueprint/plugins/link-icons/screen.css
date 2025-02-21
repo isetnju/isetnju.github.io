@@ -37,7 +37,7 @@ a[href^="aim:"],
 /* a[href^="http:"]          { background-image: url(icons/external.png); }
 a[href^="https:"]         { background-image: url(icons/external.png); } */
 a[href^="mailto:"] {
-  background-image: url(icons/email.png);
+  /* background-image: url(icons/email.png); */
 }
 
 /* a[href$="publications.html"] {
