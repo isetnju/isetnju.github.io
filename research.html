@@ -38,23 +38,6 @@
                 <div class="outline-text-2" id="text-1" style="margin-top: 30px">
                     <hr style="height: 3px; margin: 0 0 0 0;">
 
-                    <!--
-                    <h2 class="alt"
-                        style="text-align: center; margin: 15px 0 15px 0; font-size: x-large; font-weight: 500; font-style: normal; font-family: 'Noto Sans SC', sans-serif;">
-                        一 . 自 然 语 言 处 理
-                    </h2>
-
-                    <hr style="height: 1px; margin: 0 0 0 0;">
-
-                    <ol style="margin: 30px 10px 0 10px; font-size: medium; font-family: 'Noto Sans SC', sans-serif;">
-                        <li style="margin: 0 0 15px 0;">融合表示学习和领域知识的文本可读性评估 ;</li>
-                        <li style="margin: 0 0 15px 0;">基于图嵌入和图传播技术的作文评分 ;</li>
-                        <li style="margin: 0 0 15px 0;">基于图卷积神经网络的知识推理 (知识图谱) ;</li>
-                        <li style="margin: 0 0 15px 0;"> 基于分布外检测的开放意图识别. </li>
-                    </ol>
-
-                    <hr style="height: 3px; margin: 80px 0 0 0;"> -->
-
                     <h2 class="alt"
                         style="text-align: center; margin: 15px 0 15px 0; font-size: x-large; font-weight: 500; font-style: normal; font-family: 'Noto Sans SC', sans-serif;">
                         一 . 大 语 言 模 型 和 自 然 语 言 处 理
@@ -62,58 +45,103 @@
 
                     <hr style="height: 1px; margin: 0 0 0 0;">
 
-                    <ol style="margin: 30px 10px 0 10px; font-size: medium; font-family: 'Noto Sans SC', sans-serif;">
-                        <li style="margin: 0 0 15px 0;">大语言模型引导 ;
-                        <ul>
-                            <li>通过对大语言模型的层输出或者注意力输出进行定位并且提取激活向量以更好地引导大语言模型进行可控生成，如可信生成，去毒等</li>
-                            <li>负责人：程紫峰博士</li>
-                            <li>参与人：干金玮博士，孙长辉</li>
-                        </ul>
-                        </li>
-                        <li style="margin: 0 0 15px 0;">抽取大模型句子嵌入 ;
-                        <ul>
-                            <li>通过模型干预、推断时引导以及提示工程等技术从大语言模型中抽取出更好的句子嵌入</li>
-                            <li>负责人：程紫峰博士，符宇辰博士</li>
-                            <li>参与人：王忠辉</li>
-                        </ul>
-                        </li>
-                        <li style="margin: 0 0 15px 0;">嵌入即服务的大语言模型的安全 ;
-                            <ul>
-                            <li>设计有效的攻击和防御手段来更有效地偷窃和保护提供嵌入服务的大语言模型</li>
-                            <li>负责人：程紫峰博士，杨书璠博士</li>
-                            <li>参与人：</li>
-                        </ul>
-                        </li>
-                        <li style="margin: 0 0 15px 0;">对话系统;
-                            <ul>
-                            <li>任务型对话系统中的对话状态追踪以及用户模拟通过策略优化的方式提高大语言模型在对话系统中的推理能力和迁移能力</li>
-                            <li>负责人：罗翔博士</li>
-                            <li>参与人：</li>
-                        </ul>
-                        </li>
-                        <li style="margin: 0 0 15px 0;">大语言模型编辑 ;
-                            <ul>
-                            <li>通过对大语言模型进行参数定位和编辑以更好地更新模型的知识或者服务下游应用</li>
-                            <li>负责人：程紫峰博士</li>
-                            <li>参与人：干金玮博士，孙长辉</li>
-                        </ul>
-                        </li>
-                        <li style="margin: 0 0 15px 0;">大语言模型幻觉检测和缓解 ;
-                            <ul>
-                            <li>利用大语言模型的内生性（如多轮回复的一致性）或者外源性（如利用知识图谱进行检测）的幻觉检测以及基于对比解码等技术的幻觉缓解技术</li>
-                            <li>负责人：程紫峰博士</li>
-                            <li>参与人：干金玮博士</li>
-                        </ul>
-                        </li>
-                        <li style="margin: 0 0 15px 0;">面向健壮性神经网络的动态数据选择方法 ;
-                            <ul>
-                            <li>传统训练方法对全量数据平等处理，导致模型易受冗余样本干扰、收敛效率低，且对噪声或分布偏移敏感,  通过设计基于梯度稀疏性的样本重要性评分机制和动态阈值过滤策略，实现高效且健壮的数据选择，从而提升模型训练效率和泛化性能。</li>
-                            <li>负责人：周翱博士</li>
-                            <li>参与人：</li>
-                        </ul>
-                        </li>
-                        <!-- <li style="margin: 0 0 15px 0;"> 基于大语言模型学习的工具调用智能体 .</li>  -->
-                    </ol>
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center;letter-spacing: 8px"><b>大语言模型引导</b></h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">程紫峰</span> (博士生) ;
+                            <b>参与人 :</b>
+                            <span style="color: rgb(10, 141, 143);">干金玮</span> (博士生) ,
+                            <span style="color: rgb(10, 141, 143);">孙长辉</span> (硕士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            通过对大语言模型的层输出或者注意力输出进行定位并且提取激活向量以更好地引导大语言模型进行可控生成,
+                            如可信生成, 去毒等.</div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center;letter-spacing: 8px"><b>大模型句子嵌入抽取</b></h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">程紫峰</span> (博士生) ,
+                            <span style="color: rgb(10, 141, 143);">符宇辰</span> (博士生) ;
+                            <b>参与人 :</b>
+                            <span style="color: rgb(10, 141, 143);">王忠辉</span> (硕士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            通过模型干预, 推断时引导以及提示工程等技术从大语言模型中抽取出更好的句子嵌入.
+                        </div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center;letter-spacing: 8px"><b>嵌入即服务的大语言模型安全</b></h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">程紫峰</span> (博士生) ,
+                            <span style="color: rgb(10, 141, 143);">杨书璠</span> (博士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            设计有效的攻击和防御手段来更有效地偷窃和保护提供嵌入服务的大语言模型.
+                        </div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center;letter-spacing: 8px"><b>对话系统</b></h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">罗翔</span> (博士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            任务型对话系统中的对话状态追踪以及用户模拟通过策略优化的方式提高大语言模型在对话系统中的推理能力和迁移能力.
+                        </div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center;letter-spacing: 8px"><b>大语言模型编辑</b></h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">程紫峰</span> (博士生) ,
+                            <span style="color: rgb(10, 141, 143);">干金玮</span> (博士生) ;
+                            <b>参与人 :</b>
+                            <span style="color: rgb(10, 141, 143);">孙长辉</span> (硕士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            通过对大语言模型进行参数定位和编辑以更好地更新模型的知识或者服务下游应用.
+                        </div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center;letter-spacing: 8px"><b>
+                                大语言模型幻觉检测和缓解</b></h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">程紫峰</span> (博士生) ;
+                            <b>参与人 :</b>
+                            <span style="color: rgb(10, 141, 143);">干金玮</span> (博士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            利用大语言模型的内生性 (如多轮回复的一致性) 或者外源性 (如利用知识图谱进行检测) 的幻觉检测以及基于对比解码等技术的幻觉缓解技术.
+                        </div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center;letter-spacing: 8px"><b>面向健壮性神经网络的动态数据择方法</b></h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">周翱</span> (博士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            传统训练方法对全量数据平等处理, 导致模型易受冗余样本干扰, 收敛效率低, 且对噪声或分布偏移敏感,
+                            通过设计基于梯度稀疏性的样本重要性评分机制和动态阈值过滤策略, 实现高效且健壮的数据选择, 从而提升模型训练效率和泛化性能.
+                        </div>
+                    </div>
 
                     <hr style="height: 3px; margin: 80px 0 0 0;">
 
@@ -124,18 +152,60 @@
 
                     <hr style="height: 1px; margin: 0 0 0 0;">
 
-                    <ol style="margin: 30px 10px 0 10px; font-size: medium; font-family: 'Noto Sans SC', sans-serif;">
-                        <li style="margin: 0 0 15px 0;">基于多模态表示学习的跨模态数据分析与理解 ;</li>
-                        <li style="margin: 0 0 15px 0;">基于文生图模型的无数据多模态融合 ;</li>
-                        <li style="margin: 0 0 15px 0;">基于混合专家模型的高效扩散采样方法研究 .</li>
-                        <li style="margin: 0 0 15px 0;">多模态大语言模型的标签语义增强 ;
-                            <ul>
-                            <li>通过融合视觉特征与文本标签的跨模态对齐，优化MLLM对多标签任务中复杂语义关系的建模能力，解决标签共现、长尾分布等问题。</li>
-                            <li>负责人：周翱博士</li>
-                            <li>参与人：</li>
-                        </ul>
-                        </li>
-                    </ol>
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center; letter-spacing: 8px"><b>多模态大语言模型的标签语义增强</b></h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">周翱</span> (博士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            通过融合视觉特征与文本标签的跨模态对齐, 优化MLLM对多标签任务中复杂语义关系的建模能力, 解决标签共现, 长尾分布等问题.</div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center; letter-spacing: 8px">
+                            <b> 手语视频生成 </b>
+                        </h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">王聪</span> (博士生) ;
+                            <b>参与人 :</b>
+                            <span style="color: rgb(10, 141, 143);">邓泽轩</span> (硕士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            基于预训练扩散模型, 结合细粒度多条件控制和离散 tokenization, 生成高质量, 高时序一致性和高语义准确性的手语视频.</div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center; letter-spacing: 8px">
+                            <b> 语音驱动的肖像视频生成 </b>
+                        </h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">王聪</span> (博士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            通过分解视频为内容表示 (Content Latents) 和运动表示 (Motion Latents) 实现快速的语音驱动的肖像视频生成. 在生成过程中, 一个微调的图像扩散模型生成
+                            Content Latents, 一个从零训练的 DiT 模型生成 Motion Latents. </div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center; letter-spacing: 8px">
+                            <b> 全景图生成 </b>
+                        </h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">王聪</span> (博士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            通过结构约束注入扩散模型实现无畸变的基于 cube 表示的全景图生成. 目标为实现高生成质量, 模型架构泛化 (如: SD2, SDXL, SD3, FLUX 等), 灵活的条件扩展
+                            (任意数量文本,
+                            图像的组合控制), 模块即插即用, 高效的训练和推理.</div>
+                    </div>
 
                     <hr style="height: 3px; margin: 80px 0 0 0;">
 
