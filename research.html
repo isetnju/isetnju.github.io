@@ -201,10 +201,10 @@
                             <span style="color: rgb(10, 141, 143);">邓泽轩</span> (硕士生)
                         </div>
                         <div style="font-size:14pt;margin:15px 15px 5px 15px">
-                            基于预训练扩散模型, 结合细粒度多条件控制和离散 tokenization, 生成高质量, 高时序一致性和高语义准确性的手语视频.</div>
+                            基于预训练扩散模型 (DDIM, FlowMatching 等), 结合细粒度多条件控制和离散 tokenization, 生成高质量, 高时序一致性和高语义准确性的手语视频.</div>
                     </div>
 
-                    <div
+                    <!-- <div
                         style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
                         <h3 style="font-size:16pt;text-align: center; letter-spacing: 8px">
                             <b> 语音驱动的肖像视频生成 </b>
@@ -216,6 +216,22 @@
                         <div style="font-size:14pt;margin:15px 15px 5px 15px">
                             通过分解视频为内容表示 (Content Latents) 和运动表示 (Motion Latents) 实现快速的语音驱动的肖像视频生成. 在生成过程中, 一个微调的图像扩散模型生成
                             Content Latents, 一个从零训练的 DiT 模型生成 Motion Latents. </div>
+                    </div> -->
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center; letter-spacing: 8px">
+                            <b> 自回归图像生成模型的概念擦除 </b>
+                        </h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">王聪</span> (博士生) ; <br>
+                            <b>参与人 :</b>
+                            <span style="color: rgb(10, 141, 143);">吴海宇</span> (硕士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            面向自回归图像生成模型 (Infinity 等), 本项目致力于研究模型中概念擦除的理论与实践方法. 
+                            我们希望在保持模型整体生成能力的基础上, 有针对性地去除模型对特定语义概念 (如某类物体, 风格或属性) 的识别与生成能力. </div>
                     </div>
 
                     <div
@@ -229,8 +245,57 @@
                         </div>
                         <div style="font-size:14pt;margin:15px 15px 5px 15px">
                             通过结构约束注入扩散模型实现无畸变的基于 cube 表示的全景图生成. 目标为实现高生成质量, 模型架构泛化 (如: SD2, SDXL, SD3, FLUX 等), 灵活的条件扩展
-                            (任意数量文本,
-                            图像的组合控制), 模块即插即用, 高效的训练和推理.</div>
+                            (任意数量文本, 图像的组合控制), 模块即插即用, 高效的训练和推理.</div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center; letter-spacing: 8px">
+                            <b> 基于数据投毒的扩散模型版权保护与攻击 </b>
+                        </h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">王聪</span> (博士生) ; <br>
+                            <b>参与人 :</b>
+                            <span style="color: rgb(10, 141, 143);">王慧怡</span> (博士生)
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            通过对训练或微调数据进行投毒攻击, 实现利用特定提示词诱发扩散模型生成受版权保护的内容, 并同时研究相应的防御策略.
+                        </div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center; letter-spacing: 8px">
+                            <b> 大容量比特信息的扩散模型水印技术 </b>
+                        </h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">王聪</span> (博士生) ; <br>
+                            <!-- <b>参与人 :</b> -->
+                            <!-- <span style="color: rgb(10, 141, 143);">吴海宇</span> (硕士生) -->
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            本项目旨在扩散模型中引入支持高容量比特信息的水印机制, 在无需微调基础模型的前提下, 
+                            实现更多水印信息的嵌入, 同时保持模型的生成能力不受影响.
+                        </div>
+                    </div>
+
+                    <div
+                        style="border: 1px solid #b0bdcd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px; padding: 20px">
+                        <h3 style="font-size:16pt;text-align: center; letter-spacing: 8px">
+                            <b> 基于扩散模型扩展的 AI 生成内容检测 </b>
+                        </h3>
+                        <div style="font-size:13pt; text-align: center;color:#494949">
+                            <b>负责人 :</b>
+                            <span style="color: rgb(10, 141, 143);">王聪</span> (博士生) ; <br>
+                            <!-- <b>参与人 :</b> -->
+                            <!-- <span style="color: rgb(10, 141, 143);">吴海宇</span> (硕士生) -->
+                        </div>
+                        <div style="font-size:14pt;margin:15px 15px 5px 15px">
+                            本项目旨在直接扩展扩散模型作为 AI 生成内容检测器, 仅通过少量参数微调或 Adapter 训练的方式, 
+                            高效地赋予扩散模型检测 AI 生成内容的能力.
+                        </div>
                     </div>
 
                     <div
