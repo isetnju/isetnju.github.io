@@ -1,6 +1,0 @@
-# jemdoc: menu{MENU}{example.html}
-# jemdoc: addcss{bibtex.css}
-\n
-= Publications
-
-#includeraw{bib.html}
