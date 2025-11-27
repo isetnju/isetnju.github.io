@@ -1,0 +1,27 @@
+TITLE,AUTHORS,EQUAL_CONTRIBUTION,CORRESPONDENCE,CONFERENCE_ID,CONFERENCE_YEAR,YEAR,MONTH,DAY
+A Graph-based Readability Assessment Method using Word Coupling,Zhiwei Jiang;Gang Sun;Qing Gu;Tao Bai;Daoxu Chen,,Qing Gu,EMNLP,2015,,,
+Enriching Word Embeddings with Domain Knowledge for Readability Assessment,Zhiwei Jiang;Qing Gu;Yafeng Yin;Daoxu Chen,,Qing Gu,COLING,2018,,,
+A Symmetric Local Search Network for Emotion-Cause Pair Extraction,Zifeng Cheng;Zhiwei Jiang;Yafeng Yin;Hua Yu;Qing Gu,,Zhiwei Jiang,COLING,2020,,,
+Learning from Graph Propagation via Ordinal Distillation for One-Shot Automated Essay Scoring,Zhiwei Jiang;Meng Liu;Yafeng Yin;Hua Yu;Zifeng Cheng;Qing Gu,Zhiwei Jiang;Meng Liu,Zhiwei Jiang,WWW,2021,2021,1,20
+Modeling General Properties of Nouns by Selectively Averaging Contextualised Embeddings,Na Li;Zied Bouraoui;José Camacho-Collados;Luis Espinosa Anke;Qing Gu;Steven Schockaert,,Na Li,IJCAI,2021,2021,4,29
+Controlling Class Layout for Deep Ordinal Classification via Constrained Proxies Learning,Cong Wang;Zhiwei Jiang;Yafeng Yin;Zifeng Cheng;Shiping Ge;Qing Gu,,Zhiwei Jiang,AAAI,2023,2022,12,15
+Learning Robust Multi-Modal Representation for Multi-Label Emotion Recognition via Adversarial Masking and Perturbation,Shiping Ge;Zhiwei Jiang;Zifeng Cheng;Cong Wang;Yafeng Yin;Qing Gu,,Zhiwei Jiang,WWW,2023,2023,2,1
+Unsupervised Readability Assessment via Learning from Weak Readability Signals,Yuliang Liu;Zhiwei Jiang;Yafeng Yin;Cong Wang;Sheng Chen;Zhaoling Chen;Qing Gu,,Zhiwei Jiang,SIGIR,2023,2023,4,15
+Aggregating Multiple Heuristic Signals as Supervision for Unsupervised Automated Essay Scoring,Cong Wang;Zhiwei Jiang;Yafeng Yin;Zifeng Cheng;Shiping Ge;Qing Gu,,Zhiwei Jiang,ACL,2023,2023,5,4
+Improving Domain Generalization for Prompt-Aware Essay Scoring via Disentangled Representation Learning,Zhiwei Jiang;Tianyi Gao;Yafeng Yin;Meng Liu;Hua Yu;Zifeng Cheng;Qing Gu,Zhiwei Jiang;Tianyi Gao,Zhiwei Jiang,ACL,2023,2023,5,4
+Learning Event-Specific Localization Preferences for Audio-Visual Event Localization,Shiping Ge;Zhiwei Jiang;Yafeng Yin;Cong Wang;Zifeng Cheng;Qing Gu,,Zhiwei Jiang,MM,2023,2023,7,26
+Short Video Ordering via Position Decoding and Successor Prediction,Shiping Ge;Qiang Chen;Zhiwei Jiang;Yafeng Yin;Ziyao Chen;Qing Gu,,Zhiwei Jiang,SIGIR,2024,2024,3,26
+AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models,Yuchen Fu;Zhiwei Jiang;Yuliang Liu;Cong Wang;Zexuan Deng;Zhaoling Chen;Qing Gu,,Zhiwei Jiang,NeurIPS,2024,2024,9,26
+Implicit Location-Caption Alignment via Complementary Masking for Weakly-Supervised Dense Video Captioning,Shiping Ge;Qiang Chen;Zhiwei Jiang;Yafeng Yin;Liu Qin;Ziyao Chen;Qing Gu,,Zhiwei Jiang,AAAI,2025,2024,12,10
+LLM-BL: Large Language Models are Zero-Shot Rankers for Bug Localization,Zhengliang Li;Zhiwei Jiang;Qiguo Huang;Qing Gu,,Zhiwei Jiang,ICPC,2025,2025,1,1
+Ensembling Diffusion Models via Adaptive Feature Aggregation,Cong Wang;Kuan Tian;Yonghang Guan;Fei Shen;Zhiwei Jiang;Qing Gu;Jun Zhang,Cong Wang;Kuan Tian,Zhiwei Jiang;Jun Zhang,ICLR,2025,2025,1,23
+Multi-Prompting Decoder Helps Better Language Understanding,Zifeng Cheng;Zhaoling Chen;Zhiwei Jiang;Yafeng Yin;Cong Wang;Shiping Ge;Qing Gu,Zifeng Cheng;Zhaoling Chen,Zhiwei Jiang,ACL Findings,2025,2025,5,16
+LongRecipe: Recipe for Efficient Long Context Generalization in Large Language Models,Zhiyuan Hu;Yuliang Liu;Jinman Zhao;Suyuchen Wang;Yan Wang;Wei Shen;Qing Gu;Anh Tuan Luu;See-Kiong Ng;Zhiwei Jiang;Bryan Hooi,Zhiyuan Hu;Yuliang Liu,Zhiyuan Hu,ACL,2025,2025,5,16
+LocAgent: Agentic Code Localization with Graph-Based Indexing,Zhaoling Chen;Xiangru Tang;Gangda Deng;Fang Wu;Jialong Wu;Zhiwei Jiang;Viktor Prasanna;Arman Cohan;Xingyao Wang,Zhaoling Chen;Xiangru Tang;Gangda Deng,,ACL,2025,2025,5,16
+Contrastive Prompting Enhances Sentence Embeddings in LLMs through Inference-Time Steering,Zifeng Cheng;Yuchen Fu;Zhonghui Wang;Zhiwei Jiang;Yafeng Yin;Cong Wang;Qing Gu,Zifeng Cheng;Yuchen Fu;Zhonghui Wang,Zhiwei Jiang,ACL,2025,2025,5,16
+Token Prepending: A Training-Free Approach for Eliciting Better Sentence Embeddings from LLMs,Yuchen Fu;Zifeng Cheng;Zhiwei Jiang;Zhonghui Wang;Yafeng Yin;Zhengliang Li;Qing Gu,Yuchen Fu;Zifeng Cheng,Zhiwei Jiang,ACL,2025,2025,5,16
+Cross-Modal Prototype Augmentation and Dual-Grained Prompt Learning for Social Media Popularity Prediction,Ao Zhou;Mingsheng Tu;Luping Wang;Tenghao Sun;Zifeng Cheng;Yafeng Yin;Zhiwei Jiang;Qing Gu,Ao Zhou;Mingsheng Tu,Zhiwei Jiang,MM,2025,2025,8,22
+Hierarchical Vision-Language Reasoning for Multimodal Multiple-Choice Question Answering,Ao Zhou;Zebo Gu;Tenghao Sun;Jiawen Chen;Mingsheng Tu;Zifeng Cheng;Yafeng Yin;Zhiwei Jiang;Qing Gu,Ao Zhou;Zebo Gu;Tenghao Sun;Jiawen Chen,Zhiwei Jiang,MM,2025,2025,8,22
+Steering When Necessary: Flexible Steering Large Language Models with Backtracking,Zifeng Cheng;Jinwei Gan;Zhiwei Jiang;Cong Wang;Yafeng Yin;Xiang Luo;Yuchen Fu;Qing Gu,Zifeng Cheng;Jinwei Gan,Zifeng Cheng;Zhiwei Jiang,NeurIPS,2025,2025,9,18
+Advanced Sign Language Video Generation with Compressed and Quantized Multi-Condition Tokenization,Cong Wang;Zexuan Deng;Zhiwei Jiang;Yafeng Yin;Fei Shen;Zifeng Cheng;Shiping Ge;Shiwei Gan;Qing Gu,Cong Wang;Zexuan Deng,Zhiwei Jiang;Yafeng Yin,NeurIPS,2025,2025,9,18
+RegionMarker: A Region-Triggered Semantic Watermarking Framework for Embedding-as-a-Service Copyright Protection,Shufan Yang;Zifeng Cheng;Zhiwei Jiang;Yafeng Yin;Cong Wang;Shiping Ge;Yuchen Fu;Qing Gu,Shufan Yang;Zifeng Cheng,Zifeng Cheng;Zhiwei Jiang,AAAI,2026,2025,11,8

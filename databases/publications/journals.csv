@@ -1,0 +1,13 @@
+TITLE,AUTHORS,EQUAL_CONTRIBUTION,CORRESPONDENCE,JOURNAL_ID,YEAR,MONTH,DAY
+A Cluster Based Feature Selection Method for Cross-Project Software Defect Prediction,Chao Ni;Wangshu Liu;Xiang Chen;Qing Gu;Daoxu Chen;Qiguo Huang,,Qing Gu,JCST,2017,,
+GRAW+: A Two-View Graph Propagation Method with Word Coupling for Readability Assessment,Zhiwei Jiang;Qing Gu;Yafeng Yin;Jianxiang Wang;Daoxu Chen,,,JASIST,2019,,
+DP-Share: Privacy-preserving Software Defect Prediction Model Sharing through Differential Privacy,Xiang Chen;Dun Zhang;Zhan-Qi Cui;Qing Gu;Xiao-Lin Ju,Xiang Chen;Dun Zhang,,JCST,2019,,
+An Empirical Study on Pareto Based Multi-objective Feature Selection for Software Defect Prediction,Chao Ni;Xiang Chen;Fangfang Wu;Yuxiang Shen;Qing Gu,,Xiang Chen;Qing Gu,JSS,2019,,
+Multitask Defect Prediction,Chao Ni;Xiang Chen;Xin Xia;Qing Gu;Yingquan Zhao,,Qing Gu,JSEP,2019,,
+LaProb: A Label Propagation Based Software Bug Localization Method,Zhengliang Li;Zhiwei Jiang;Xiang Chen;Kaibo Cao;Qing Gu,,Xiang Chen;Qing Gu,IST,2021,,
+A Unified Target-Oriented Sequence-to-Sequence Model for Emotion-Cause Pair Extraction,Zifeng Cheng;Zhiwei Jiang;Yafeng Yin;Na Li;Qing Gu,,Zhiwei Jiang,TASLP,2021,7,19
+Revisiting Supervised and Unsupervised Methods for Effort-Aware Cross-Project Defect Prediction,Chao Ni;Xin Xia;David Lo;Xiang Chen;Qing Gu,,Xin Xia;Qing Gu,TSE,2022,,
+Learning to Classify Open Intent via Soft Labeling and Manifold Mixup,Zifeng Cheng;Zhiwei Jiang;Yafeng Yin;Cong Wang;Qing Gu,,Zhiwei Jiang,TASLP,2022,1,6
+A Consistent Dual-MRC Framework for Emotion-Cause Pair Extraction,Zifeng Cheng;Zhiwei Jiang;Yafeng Yin;Cong Wang;Shiping Ge;Qing Gu,,Zhiwei Jiang,TOIS,2022,9,1
+Unifying Token and Span Level Supervisions for Few-Shot Sequence Labeling,Zifeng Cheng;Qingyu Zhou;Zhiwei Jiang;Xuemin Zhao;Yunbo Cao;Qing Gu,,Zhiwei Jiang,TOIS,2023,7,11
+Fine-Grained Alignment Network for Zero-Shot Cross-Modal Retrieval,Shiping Ge;Zhiwei Jiang;Yafeng Yin;Cong Wang;Zifeng Cheng;Qing Gu,,Zhiwei Jiang,TOMM,2025,3,1
