@@ -1,0 +1,32 @@
+#card_photo .card-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 默认两列 */
+    gap: 12px;
+}
+
+@media (max-width: 640px) {
+    #card_photo .card-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+#card_photo .card-content img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid var(--card-bd);
+    background: #f8f9fa;
+    /* 图片未加载时的底色 */
+    aspect-ratio: 4 / 3;
+    /* 统一比例（可改为 1 / 1 做正方形） */
+    object-fit: cover;
+    /* 保持裁剪居中 */
+    object-position: center;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+#card_photo .card-content img:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-1);
+}

@@ -1,0 +1,19 @@
+.footnote {
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--text-2);
+    /* 次要文字色 */
+}
+
+.footnote a {
+    color: var(--text-2);
+    /* 链接不突兀 */
+    text-decoration: none;
+}
+
+.footnote a:hover {
+    color: var(--text-1);
+    /* 悬停轻微强化 */
+    text-decoration: underline;
+}

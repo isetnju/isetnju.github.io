@@ -1,0 +1,28 @@
+.card {
+    width: min(960px, 92vw);
+    background: var(--card-bg);
+    border: 1px solid var(--card-bd);
+    border-radius: 18px;
+    box-shadow: var(--shadow-1);
+    backdrop-filter: saturate(1.05) blur(8px);
+    -webkit-backdrop-filter: saturate(1.05) blur(8px);
+    overflow: hidden;
+}
+
+.card__inner {
+    padding: 24px 28px;
+}
+
+.card-title {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-1);
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.card-content {
+    margin: 0;
+    font-size: 20px;
+}

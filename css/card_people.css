@@ -1,0 +1,58 @@
+.grid-card-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-card-content p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.teacher-item {
+    text-align: center;
+}
+
+.teacher-item img {
+    width: 105px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.people-title {
+    color: rgb(115, 115, 115);
+}
+
+.people-name {
+    font-weight: 700;
+}
+
+.people-name[href] {
+    color: rgb(0, 91, 211);
+    text-decoration: none;
+}
+
+.people-name[href]:hover {
+    color: rgb(61, 145, 255);
+}
+
+.grade-separator {
+    display: block;
+    width: 100%;
+    padding: 5px 16px;
+    /* margin-top: 10px; */
+    box-sizing: border-box;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(127, 127, 127);
+    background-color: transparent;
+    border: 1px dashed rgb(127, 127, 127);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#card_graduation .card-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

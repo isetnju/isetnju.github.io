@@ -1,0 +1,96 @@
+#title {
+    text-align: center;
+    margin: 0 0 12px;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    line-height: 1.25;
+}
+
+#title .iset {
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+#subtitle {
+    text-align: center;
+    margin: 25px 0 25px 0;
+    color: var(--text-2);
+    font-size: 24px;
+}
+
+#nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px;
+    border: 1px solid var(--card-bd);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.6);
+    /* margin-top: 20px; */
+}
+
+#nav a {
+    flex: 1 1 0;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-2);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    transition: color 160ms ease, background-color 160ms ease;
+    white-space: nowrap;
+}
+
+#nav a:hover {
+    background: rgba(99, 102, 241, 0.08);
+    color: var(--text-1);
+}
+
+#nav a.active {
+    color: var(--text-1);
+}
+
+#nav a:focus-visible {
+    outline: 3px solid rgba(34, 211, 238, 0.5);
+    outline-offset: 2px;
+}
+
+#nav a .material-symbols-rounded {
+    margin-right: 12px;
+    /* 调整这个值来控制间距大小 */
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+#indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2.5px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+    box-shadow: 0 6px 16px rgba(99, 102, 241, 0.25);
+    transition:
+        transform 260ms cubic-bezier(.2, .7, .2, 1),
+        width 260ms cubic-bezier(.2, .7, .2, 1);
+    will-change: transform, width;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #indicator {
+        transition: none;
+    }
+}

@@ -1,0 +1,30 @@
+:root {
+    --bg-1: #f8f9fa;
+    --bg-2: #f1f3f5;
+    --text-1: #0f172a;
+    --text-2: #334155;
+    --accent-1: #6366f1;
+    --accent-2: #22d3ee;
+    --card-bg: #ffffff;
+    --card-bd: #e5e7eb;
+    --shadow-1: 0 20px 40px -20px rgba(2, 10, 25, 0.25);
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: var(--text-1);
+    background: var(--bg-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh 2vw;
+    gap: 24px;
+    /* 多张卡片之间的间距 */
+    overflow-y: auto;
+}

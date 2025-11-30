@@ -1,0 +1,75 @@
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 12ch 1fr;
+    /* 日期列固定 12 个字符宽、冒号列固定 1em、正文自适应 */
+    align-items: start;
+    gap: 8px;
+    padding: 8px 10px;
+    border: 1px solid var(--card-bd);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.news-item:hover {
+    background: rgba(99, 102, 241, 0.06);
+}
+
+.news-date {
+    font-family: ui-monospace, 'SF Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    color: var(--text-2);
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    /* 日期不换行 */
+}
+
+.news-text {
+    color: var(--text-1);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    /* 超长单词也能断行 */
+    min-width: 0;
+    /* 防止按内容自然撑开，保证能在容器内换行 */
+}
+
+.news-text b,
+.news-text strong {
+    color: var(--accent-1);
+    font-weight: 750;
+}
+
+#btn-show-all-news {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    margin-top: 8px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent-1);
+    background-color: transparent;
+    border: 1px solid var(--accent-1);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#btn-show-all-news:hover {
+    background-color: color-mix(in srgb, var(--accent-1) 10%, transparent);
+}
+
+#btn-show-all-news:active {
+    transform: translateY(1px);
+    background-color: rgba(99, 102, 241, 0.12);
+}
