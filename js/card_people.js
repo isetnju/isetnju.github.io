@@ -24,7 +24,6 @@ function addMultipleTeachers(teachersData) {
     cardContent.innerHTML = '';
 
     teachersData.forEach(teacher => {
-        console.log(teacher);
         const teacherItem = createTeacherItem(
             teacher.PHOTO_PATH,
             teacher.NAME,
@@ -35,7 +34,64 @@ function addMultipleTeachers(teachersData) {
     });
 }
 
+function separateStudents(peopleData) {
+    const graduatedPhd = [];
+    const graduatedMs = [];
+    const currentPhd = [];
+    const currentMs = [];
+
+    peopleData.forEach(person => {
+        if (person.GRADUATION_YEAR && person.GRADUATION_YEAR !== '') {
+            if (person.DEGREE === 'D') {
+                graduatedPhd.push(person);
+            } else if (person.DEGREE === 'M') {
+                graduatedMs.push(person);
+            }
+        } else {
+            if (person.DEGREE === 'D') {
+                currentPhd.push(person);
+            } else if (person.DEGREE === 'M') {
+                currentMs.push(person);
+            }
+        }
+    });
+    return [graduatedPhd, graduatedMs, currentPhd, currentMs];
+}
+
+function addCurrentMsStudents(studentData) {
+    const studentDict = {};
+    for (let i = 0; i < studentData.length; i++) {
+        const { NAME_EN, DEGREE, CLASS, GRADUATION_YEAR, DESTINATION, ...std } = studentData[i];
+        if (!studentDict[std.ENROLLMENT]) {
+            studentDict[std.ENROLLMENT] = [];
+        }
+        studentDict[std.ENROLLMENT].push({ NAME: std.NAME, HOMEPAGE_URL: std.HOMEPAGE_URL });
+    }
+
+    const studentList = document.querySelector('#card_ms_students .card-content');
+    studentList.innerHTML = '';
+
+    Object.keys(studentDict).sort().forEach(year => {
+        const a = document.createElement('a');
+        a.className = 'grade-separator';
+        a.innerHTML = `${year} 级`
+        studentList.appendChild(a);
+
+        const div = document.createElement('div');
+        div.className = 'grid-card-content';
+        studentDict[year].forEach(std => {
+            p = document.createElement('p');
+            p.innerHTML = std.HOMEPAGE_URL ? `<a class="people-name" href="${std.HOMEPAGE_URL}" target="_blank">${std.NAME}</a>` : `<a class="people-name">${std.NAME}</a>`;
+            div.appendChild(p)
+        });
+        studentList.appendChild(div);
+    })
+}
+
 (async () => {
     const allPeople = await loadCSVs(people_files);
     addMultipleTeachers(allPeople[0]);
+
+    const separatedStudents = separateStudents(allPeople[1]);
+    addCurrentMsStudents(separatedStudents[3]);
 })();

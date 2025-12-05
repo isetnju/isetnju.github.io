@@ -1,4 +1,4 @@
-NAME,NAME_EN,DEGREE,CLASS,ENROLLMENT,GRADUATION_YEAR,DESTINATION_YEAR,HOMEPAGE_URL
+NAME,NAME_EN,DEGREE,CLASS,ENROLLMENT,GRADUATION_YEAR,DESTINATION,HOMEPAGE_URL
 陈翔,,D,,,2011,南通大学,
 陈家强,,M,,,2014,华泰,
 孙刚,,M,,,2015,华为,
@@ -24,9 +24,9 @@ NAME,NAME_EN,DEGREE,CLASS,ENROLLMENT,GRADUATION_YEAR,DESTINATION_YEAR,HOMEPAGE_U
 陈晟,,M,,,2024,华为,
 陈炤伶,Zhaoling Chen,M,,2022,2025,PhD @ UC Riverside,
 姜义杰,,M,,,2025,Garena,
-葛士平,Shiping Ge,D,0,2021,2025,南京邮电大学,https://shipingge.github.io/
-程紫峰,Zifeng Cheng,D,0,2021,2025,南京大学,https://zifengcheng.github.io/
 李政亮,Zhengliang Li,D,,2019,2025,国电南自,
+程紫峰,Zifeng Cheng,D,0,2021,2025,南京大学,https://zifengcheng.github.io/
+葛士平,Shiping Ge,D,0,2021,2025,南京邮电大学,https://shipingge.github.io/
 王聪,Cong Wang,D,0,2021,,,https://tenvence.github.io/
 符宇辰,Yuchen Fu,D,,2022,,,
 邓泽轩,Zexuan Deng,M,,2023,,,

@@ -17,6 +17,7 @@
     width: 105px;
     height: 140px;
     border-radius: 10px;
+    border: 1px solid var(--card-bd);
 }
 
 .people-title {
@@ -52,7 +53,11 @@
     text-align: center;
 }
 
-#card_graduation .card-content {
+/* #card_graduation .card-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+} */
+
+#card_graduation .grade-separator{
+    letter-spacing: 5px;
 }
