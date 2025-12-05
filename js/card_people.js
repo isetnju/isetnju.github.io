@@ -58,6 +58,42 @@ function separateStudents(peopleData) {
     return [graduatedPhd, graduatedMs, currentPhd, currentMs];
 }
 
+function addCurrentPhdStudents(studentData) {
+    const studentDict = {};
+    for (let i = 0; i < studentData.length; i++) {
+        if (!studentDict[studentData[i].ENROLLMENT]) {
+            studentDict[studentData[i].ENROLLMENT] = [];
+        }
+        studentDict[studentData[i].ENROLLMENT].push({
+            NAME: studentData[i].NAME,
+            HOMEPAGE_URL: studentData[i].HOMEPAGE_URL,
+            CLASS: studentData[i].CLASS
+        });
+    }
+
+    const studentList = document.querySelector('#card_phd_students .card-content');
+    studentList.innerHTML = '';
+
+    Object.keys(studentDict).sort().forEach(year => {
+        const a = document.createElement('a');
+        a.className = 'grade-separator';
+        a.innerHTML = `${year} 级`
+        studentList.appendChild(a);
+
+        const div = document.createElement('div');
+        div.className = 'grid-card-content';
+        studentDict[year].forEach(std => {
+            p = document.createElement('p');
+            p.innerHTML = std.HOMEPAGE_URL ? `<a class="people-name" href="${std.HOMEPAGE_URL}" target="_blank">${std.NAME}</a>` : `<a class="people-name">${std.NAME}</a>`;
+            if (std.CLASS !== null) {
+                p.innerHTML += `<br> <a class="people-title">（${std.CLASS === 0 ? '硕博连读' : '直博'}）</a>`;
+            }
+            div.appendChild(p)
+        });
+        studentList.appendChild(div);
+    })
+}
+
 function addCurrentMsStudents(studentData) {
     const studentDict = {};
     for (let i = 0; i < studentData.length; i++) {
@@ -90,41 +126,34 @@ function addCurrentMsStudents(studentData) {
     })
 }
 
-function addCurrentPhdStudents(studentData) {
-    const studentDict = {};
-    for (let i = 0; i < studentData.length; i++) {
-        if (!studentDict[studentData[i].ENROLLMENT]) {
-            studentDict[studentData[i].ENROLLMENT] = [];
-        }
-        studentDict[studentData[i].ENROLLMENT].push({
-            NAME: studentData[i].NAME,
-            HOMEPAGE_URL: studentData[i].HOMEPAGE_URL,
-            CLASS: studentData[i].CLASS
-        });
-    }
-    // console.log(studentDict);
-
-    const studentList = document.querySelector('#card_phd_students .card-content');
+function addGraduatedPhdStudents(studentData) {
+    const studentList = document.querySelector('#grad-phd-content');
     studentList.innerHTML = '';
 
-    Object.keys(studentDict).sort().forEach(year => {
-        const a = document.createElement('a');
-        a.className = 'grade-separator';
-        a.innerHTML = `${year} 级`
-        studentList.appendChild(a);
+    studentData.reverse().forEach(std => {
+        p = document.createElement('p');
+        p.innerHTML = std.HOMEPAGE_URL ? `<a class="people-name" href="${std.HOMEPAGE_URL}" target="_blank">${std.NAME}</a>` : `<a class="people-name">${std.NAME}</a>`;
+        p.innerHTML += '<br>';
+        p.innerHTML += `<a>${std.GRADUATION_YEAR}</a>`;
+        p.innerHTML += '<br>';
+        p.innerHTML += `<a class="people-title">（${std.DESTINATION}）</a>`
+        studentList.appendChild(p);
+    });
+}
 
-        const div = document.createElement('div');
-        div.className = 'grid-card-content';
-        studentDict[year].forEach(std => {
-            p = document.createElement('p');
-            p.innerHTML = std.HOMEPAGE_URL ? `<a class="people-name" href="${std.HOMEPAGE_URL}" target="_blank">${std.NAME}</a>` : `<a class="people-name">${std.NAME}</a>`;
-            if (std.CLASS !== null) {
-                p.innerHTML += `<br> <a class="people-title">（${std.CLASS === 0 ? '硕博连读' : '直博'}）</a>`;
-            }
-            div.appendChild(p)
-        });
-        studentList.appendChild(div);
-    })
+function addGraduatedMsStudents(studentData) {
+    const studentList = document.querySelector('#grad-ms-content');
+    studentList.innerHTML = '';
+
+    studentData.reverse().forEach(std => {
+        p = document.createElement('p');
+        p.innerHTML = std.HOMEPAGE_URL ? `<a class="people-name" href="${std.HOMEPAGE_URL}" target="_blank">${std.NAME}</a>` : `<a class="people-name">${std.NAME}</a>`;
+        p.innerHTML += '<br>';
+        p.innerHTML += `<a>${std.GRADUATION_YEAR}</a>`;
+        p.innerHTML += '<br>';
+        p.innerHTML += `<a class="people-title">（${std.DESTINATION}）</a>`
+        studentList.appendChild(p);
+    });
 }
 
 
@@ -133,6 +162,8 @@ function addCurrentPhdStudents(studentData) {
     addMultipleTeachers(allPeople[0]);
 
     const separatedStudents = separateStudents(allPeople[1]);
+    addGraduatedPhdStudents(separatedStudents[0]);
+    addGraduatedMsStudents(separatedStudents[1]);
     addCurrentPhdStudents(separatedStudents[2]);
     addCurrentMsStudents(separatedStudents[3]);
 })();
