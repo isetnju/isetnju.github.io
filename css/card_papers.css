@@ -1,0 +1,32 @@
+.paper-list {
+    font-size: 16px;
+    gap: 10px;
+}
+
+.paper-list li {
+    padding: 5px 0;
+    line-height: 1.5;
+}
+
+
+.pub-badge {
+    color: red;
+    font-weight: 650;
+}
+
+.paper-title {
+    font-weight: 650;
+}
+
+.pub-info {
+    font-style: italic;
+    color: rgb(100, 100, 100);
+}
+
+.pub-id{
+    color: #2563eb;
+}
+
+.pub-level{
+    color: #db4c3f;
+}
