@@ -54,6 +54,16 @@ function createJournalItem(journalId, title, authors, equalContributor, correspo
     return paperLi;
 }
 
+function createJournalCnItem(journalId, title, authors, equalContributor, correspondence, pubLevel) {
+    const paperLi = document.createElement('li');
+    paperLi.innerHTML = `<a class="paper-title">${title}</a>`;
+    paperLi.innerHTML += `<br>`;
+    paperLi.innerHTML += getAuthorsStr(authors, equalContributor, correspondence);
+    paperLi.innerHTML += `<br>`;
+    paperLi.innerHTML += `<a class="pub-info">${journalId} (<b class="pub-level">${pubLevel}</b>)</a>`;
+    return paperLi;
+}
+
 function addPreprints(paperData) {
     const paperList = document.querySelector('#card_preprints .paper-list');
     paperList.innerHTML = '';
@@ -106,6 +116,23 @@ function addJournals(paperData, pubInfo) {
     });
 }
 
+function addJournalsCn(paperData, pubInfo) {
+    const paperList = document.querySelector('#card_journal_cn .paper-list');
+    paperList.innerHTML = '';
+
+    paperData.forEach(paper => {
+        const paperItem = createJournalCnItem(
+            paper.JOURNAL_ID,
+            paper.TITLE,
+            paper.AUTHORS,
+            paper.EQUAL_CONTRIBUTION,
+            paper.CORRESPONDENCE,
+            pubInfo[paper.JOURNAL_ID].LEVEL
+        );
+        paperList.appendChild(paperItem);
+    });
+}
+
 (async () => {
     const paper_files = [
         'databases/publications/preprints.csv',
@@ -124,4 +151,5 @@ function addJournals(paperData, pubInfo) {
     addPreprints(allPapers[0].reverse());
     addConference(allPapers[1].reverse(), pubInfoDict);
     addJournals(allPapers[2].reverse(), pubInfoDict);
+    addJournalsCn(allPapers[3].reverse(), pubInfoDict);
 })();
