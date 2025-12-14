@@ -1,0 +1,26 @@
+#card_album .card-content {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.photo-name {
+    color: blueviolet;
+}
+
+.photo-affair {
+    color: orangered;
+}
+
+#card_album hr {
+    border: none;
+    height: 1px;
+    background: var(--card-bd);
+    margin: 20px 0;
+}
+
+.photo-item img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}

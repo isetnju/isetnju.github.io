@@ -15,10 +15,10 @@
 
 .card-title {
     margin: 0 0 16px 0;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 800;
     color: var(--text-1);
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     line-height: 1.5;
 }
 
