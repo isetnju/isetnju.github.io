@@ -1,0 +1,30 @@
+.card_research .card-content {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.research-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.research-leader {
+    font-size: 20px;
+}
+
+.research-name {
+    color: blue;
+}
+
+.card_research hr {
+    border: none;
+    height: 1px;
+    background: var(--card-bd);
+    margin: 20px 0;
+}
+
+.research-des {
+    text-align: left;
+    margin-top: 20px;
+}
