@@ -91,7 +91,7 @@ function filterPeople(people) {
             return 0;
         })
         .map(({ DEGREE, CLASS, ENROLLMENT, ...rest }) => rest);
-    const all = [...teachers, ...students];
+    const all = [...students, ...teachers];
     return new Map(all.map(item => [item.NAME_EN, item.NAME]));
 }
 
