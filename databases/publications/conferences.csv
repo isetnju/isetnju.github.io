@@ -28,3 +28,5 @@ RegionMarker: A Region-Triggered Semantic Watermarking Framework for Embedding-a
 Rethinking BCE Loss for Multi-Label Image Recognition with Fine-Tuning,Ao Zhou;Zhiwei Jiang;Zifeng Cheng;Cong Wang;Yafeng Yin;Shufan Yang;Qing Gu,,Zhiwei Jiang,CVPR,2026,2026,2,21
 AEA: Adaptive Expert Allocation Improves Sentence Embeddings from Mixture-of-Experts LLM,Shufan Yang;Zifeng Cheng;Zhiwei Jiang;Qingfeng Qi;Yafeng Yin;Cong Wang;Ao Zhou;Qing Gu,Shufan Yang;Zifeng Cheng,Zifeng Cheng;Zhiwei Jiang,ACL,2026,2026,4,7
 Focusing Condition: Inference-Time Self-Contrastive Steering Elicits Better Conditional Text Embeddings in LLMs,Zifeng Cheng;Lingyun Qian;Zhiwei Jiang;Cong Wang;Yafeng Yin;Fei Shen;Ao Zhou;Qing Gu,,Zhiwei Jiang,ACL,2026,2026,4,7
+Multi-Label Test-Time Adaptation with Bayesian Conditional Priors,Qiru Li;Ao Zhou;Zhiwei Jiang;Zifeng Cheng;Cong Wang;Yafeng Yin;Qing Gu,Qiru Li;Ao Zhou,Zhiwei Jiang,ICML,2026,2026,5,1
+ScaleErasure: Inference-Time Minimal Intervention for Precise Concept Erasure in Next-Scale Autoregressive Image Generation,Cong Wang;Haiyu Wu;Zhiwei Jiang;Zifeng Cheng;Fei Shen;Yafeng Yin;Qing Gu,Cong Wang;Haiyu Wu,Zhiwei Jiang,ICML,2026,2026,5,1
