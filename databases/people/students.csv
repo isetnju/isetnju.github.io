@@ -28,7 +28,7 @@ NAME,NAME_EN,DEGREE,CLASS,ENROLLMENT,GRADUATION_YEAR,DESTINATION,HOMEPAGE_URL
 程紫峰,Zifeng Cheng,D,0,2021,2025,南京大学,https://zifengcheng.github.io/
 葛士平,Shiping Ge,D,0,2021,2025,南京邮电大学,https://shipingge.github.io/
 王聪,Cong Wang,D,0,2021,2025,南京大学,https://tenvence.github.io/
-符宇辰,Yuchen Fu,D,,2022,,,
+符宇辰,Yuchen Fu,D,,2022,2026,X,
 邓泽轩,Zexuan Deng,M,,2023,2026,腾讯,
 王锦国,,M,,2023,2026,科技局,
 刘玉梁,Yuliang Liu,D,0,2024,,,
@@ -38,8 +38,8 @@ NAME,NAME_EN,DEGREE,CLASS,ENROLLMENT,GRADUATION_YEAR,DESTINATION,HOMEPAGE_URL
 孙长辉,,M,,2024,,,
 梁一恒,,M,,2024,,,
 叶子洋,,M,,2024,2026,广发证劵,
-成丹琳,,M,,2024,,,
-王忠辉,Zhonghui Wang,M,,2024,,,
+成丹琳,,M,,2024,2026,X,
+王忠辉,Zhonghui Wang,M,,2024,2026,X,
 周翱,Ao Zhou,D,,2025,,,
 罗翔,,D,,2025,,,
 吴文翔,,D,1,2025,,,
