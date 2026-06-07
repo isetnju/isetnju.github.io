@@ -1,26 +1,46 @@
 #card_album .card-content {
-    text-align: center;
-    line-height: 1.5;
+    display: grid;
+    gap: 16px;
+    text-align: left;
+    line-height: 1.6;
 }
 
 .photo-name {
-    color: blueviolet;
+    color: var(--accent-1);
 }
 
 .photo-affair {
-    color: orangered;
+    color: var(--accent-3);
 }
 
 #card_album hr {
-    border: none;
-    height: 1px;
-    background: var(--card-bd);
-    margin: 20px 0;
+    display: none;
+}
+
+.photo-item {
+    padding: 18px;
+    border: 1px solid var(--card-bd);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: var(--shadow-2);
 }
 
 .photo-item img {
-    width: 500px;
+    display: block;
+    width: min(100%, 720px);
     height: auto;
-    border-radius: 20px;
-    margin-top: 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--card-bd);
+    margin: 14px auto 0;
+    box-shadow: 0 16px 36px -28px rgba(15, 23, 42, 0.78);
+}
+
+.photo-item img+img {
+    margin-top: 12px;
+}
+
+@media (max-width: 560px) {
+    .photo-item {
+        padding: 14px;
+    }
 }

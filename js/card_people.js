@@ -12,7 +12,7 @@ function createTeacherItem(imgSrc, name, title, link = null) {
         <p>
             ${nameHtml}
             <br>
-            <a class="people-title">（${title}）</a>
+            <a class="people-title">${title}</a>
         </p>
     `;
 
@@ -86,7 +86,7 @@ function addCurrentPhdStudents(studentData) {
             p = document.createElement('p');
             p.innerHTML = std.HOMEPAGE_URL ? `<a class="people-name" href="${std.HOMEPAGE_URL}" target="_blank">${std.NAME}</a>` : `<a class="people-name">${std.NAME}</a>`;
             if (std.CLASS !== null) {
-                p.innerHTML += `<br> <a class="people-title">（${std.CLASS === 0 ? '硕博连读' : '直博'}）</a>`;
+                p.innerHTML += `<br> <a class="people-title">${std.CLASS === 0 ? '硕博连读' : '直博'}</a>`;
             }
             div.appendChild(p)
         });
@@ -136,7 +136,7 @@ function addGraduatedPhdStudents(studentData) {
         p.innerHTML += '<br>';
         p.innerHTML += `<a>${std.GRADUATION_YEAR}</a>`;
         p.innerHTML += '<br>';
-        p.innerHTML += `<a class="people-title">（${std.DESTINATION}）</a>`
+        p.innerHTML += `<a class="people-title" title="${std.DESTINATION}">${std.DESTINATION}</a>`
         studentList.appendChild(p);
     });
 }
@@ -151,7 +151,7 @@ function addGraduatedMsStudents(studentData) {
         p.innerHTML += '<br>';
         p.innerHTML += `<a>${std.GRADUATION_YEAR}</a>`;
         p.innerHTML += '<br>';
-        p.innerHTML += `<a class="people-title">（${std.DESTINATION}）</a>`
+        p.innerHTML += `<a class="people-title" title="${std.DESTINATION}">${std.DESTINATION}</a>`
         studentList.appendChild(p);
     });
 }

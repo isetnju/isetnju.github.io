@@ -1,30 +1,75 @@
 .card_research .card-content {
-    text-align: center;
-    line-height: 1.5;
+    display: grid;
+    gap: 14px;
+    text-align: left;
+    line-height: 1.72;
+}
+
+.card_research .card-title::before {
+    top: 50%;
+    bottom: auto;
+    height: 20px;
+    transform: translateY(-50%);
+}
+
+.research-item {
+    position: relative;
+    padding: 18px 20px;
+    border: 1px solid var(--card-bd);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: var(--shadow-2);
+    color: var(--text-1);
+}
+
+.research-item::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 20px;
+    width: 4px;
+    height: 28px;
+    border-radius: 0 999px 999px 0;
+    background: linear-gradient(180deg, var(--accent-1), var(--accent-2));
 }
 
 .research-title {
-    font-size: 25px;
+    color: var(--text-1);
+    font-size: 22px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .research-leader {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .research-name {
-    color: blue;
+    color: var(--accent-1);
+    font-weight: 700;
 }
 
 .card_research hr {
-    border: none;
-    height: 1px;
-    background: var(--card-bd);
-    margin: 20px 0;
+    display: none;
 }
 
 .research-des {
     text-align: left;
-    margin-top: 20px;
+    margin-top: 14px;
+    color: var(--text-2);
+}
+
+@media (max-width: 560px) {
+    .research-item {
+        padding: 16px 15px;
+    }
+
+    .research-item::before {
+        top: 18px;
+        height: 24px;
+    }
+
+    .research-title {
+        font-size: 20px;
+    }
 }

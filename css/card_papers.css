@@ -1,32 +1,85 @@
 .paper-list {
     font-size: 16px;
-    gap: 10px;
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: paper-item;
 }
 
 .paper-list li {
-    padding: 5px 0;
-    line-height: 1.5;
+    position: relative;
+    counter-increment: paper-item;
+    padding: 14px 16px 14px 50px;
+    line-height: 1.58;
+    border: 1px solid var(--card-bd);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: var(--shadow-2);
 }
 
+.paper-list li::before {
+    content: counter(paper-item);
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 999px;
+    color: var(--accent-1);
+    background: rgba(37, 99, 235, 0.09);
+    border: 1px solid rgba(37, 99, 235, 0.17);
+    font-size: 13px;
+    font-weight: 750;
+}
 
 .pub-badge {
-    color: red;
-    font-weight: 650;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 6px 4px 0;
+    padding: 2px 7px;
+    border: 1px solid rgba(249, 115, 22, 0.25);
+    border-radius: 999px;
+    color: #c2410c;
+    background: rgba(249, 115, 22, 0.08);
+    font-size: 13px;
+    font-weight: 750;
+    text-decoration: none;
 }
 
 .paper-title {
-    font-weight: 650;
+    color: var(--text-1);
+    font-weight: 750;
+    text-decoration: none;
 }
 
 .pub-info {
+    display: inline-block;
+    margin-top: 4px;
     font-style: italic;
-    color: rgb(100, 100, 100);
+    color: var(--text-3);
+    text-decoration: none;
 }
 
-.pub-id{
-    color: #2563eb;
+.pub-id {
+    color: var(--accent-1);
 }
 
-.pub-level{
-    color: #db4c3f;
+.pub-level {
+    color: #dc2626;
+}
+
+@media (max-width: 560px) {
+    .paper-list li {
+        padding: 13px 13px 13px 44px;
+    }
+
+    .paper-list li::before {
+        left: 12px;
+        top: 15px;
+    }
 }

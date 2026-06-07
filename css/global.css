@@ -1,13 +1,22 @@
 :root {
-    --bg-1: #f8f9fa;
-    --bg-2: #f1f3f5;
-    --text-1: #0f172a;
-    --text-2: #334155;
-    --accent-1: #6366f1;
-    --accent-2: #22d3ee;
-    --card-bg: #ffffff;
-    --card-bd: #e5e7eb;
-    --shadow-1: 0 20px 40px -20px rgba(2, 10, 25, 0.25);
+    --bg-1: #f7f9fc;
+    --bg-2: #eef4f8;
+    --text-1: #101827;
+    --text-2: #475569;
+    --text-3: #64748b;
+    --accent-1: #2563eb;
+    --accent-2: #0891b2;
+    --accent-3: #f97316;
+    --accent-soft: rgba(37, 99, 235, 0.08);
+    --card-bg: rgba(255, 255, 255, 0.94);
+    --card-bd: #dce4ed;
+    --radius: 8px;
+    --shadow-1: 0 18px 48px -28px rgba(15, 23, 42, 0.45);
+    --shadow-2: 0 10px 26px -24px rgba(15, 23, 42, 0.5);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html,
@@ -15,16 +24,47 @@ body {
     min-height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
     color: var(--text-1);
-    background: var(--bg-1);
+    background:
+        linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 48%, #f7f7f3 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4vh 2vw;
+    padding: 32px 20px 28px;
     gap: 24px;
-    /* 多张卡片之间的间距 */
     overflow-y: auto;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: var(--accent-1);
+}
+
+b,
+strong {
+    font-weight: 750;
+}
+
+button {
+    font: inherit;
+}
+
+::selection {
+    color: #ffffff;
+    background: var(--accent-1);
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 18px 14px 24px;
+        gap: 18px;
+    }
 }

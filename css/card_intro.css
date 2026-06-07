@@ -1,59 +1,69 @@
+#card_intro .card-content>p {
+    font-size: 18px;
+    line-height: 1.85;
+}
+
 #subcard_enroll {
     position: relative;
-    margin-top: 14px;
-    padding: 16px 16px 14px 16px;
+    margin-top: 20px;
+    padding: 18px 20px 18px 22px;
     border: 1px solid var(--card-bd);
-    border-radius: 12px;
+    border-radius: var(--radius);
     background:
-        linear-gradient(180deg, rgba(99, 102, 241, 0.05), rgba(34, 211, 238, 0.06));
-    font-size: 18px;
+        linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(8, 145, 178, 0.06));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78);
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 #subcard_enroll #enroll-text {
-    margin-top: 0;
+    margin: 0;
 }
 
 #subcard_enroll::before {
     content: "";
     position: absolute;
     inset: 0 auto 0 0;
-    width: 4px;
-    border-radius: 12px 0 0 12px;
-    background: linear-gradient(180deg, var(--accent-1), var(--accent-2));
+    width: 5px;
+    border-radius: var(--radius) 0 0 var(--radius);
+    background: linear-gradient(180deg, var(--accent-1), var(--accent-2), var(--accent-3));
     opacity: 0.9;
 }
 
 #email-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-    justify-content: center;
+    gap: 10px;
+    margin: 12px 0 16px;
+    justify-content: flex-start;
 }
 
 .chip {
     display: inline-flex;
     align-items: stretch;
-    border: 1px solid rgb(126, 126, 126);
+    max-width: 100%;
+    border: 1px solid rgba(100, 116, 139, 0.45);
     border-radius: 999px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 8px 18px -18px rgba(15, 23, 42, 0.7);
 }
 
 .chip a {
-    padding: 7px 10px 7px 12px;
+    padding: 7px 11px 7px 13px;
     text-decoration: none;
     color: var(--text-1);
     font-weight: 600;
-    font-size: 12.5px;
+    font-size: 13px;
     font-family: ui-monospace, 'SF Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    overflow-wrap: anywhere;
 }
 
 .chip .copy {
     appearance: none;
     border: 0;
-    border-left: 1px solid rgb(126, 126, 126);
-    background: transparent;
+    border-left: 1px solid rgba(100, 116, 139, 0.35);
+    background: #f8fafc;
     color: var(--text-2);
     padding: 6px 10px;
     font-size: 13px;
@@ -62,16 +72,38 @@
 }
 
 .chip .copy:hover {
-    background: rgba(99, 102, 241, 0.08);
+    background: rgba(37, 99, 235, 0.1);
     color: var(--text-1);
 }
 
 .chip .copy:focus-visible {
-    outline: 3px solid rgba(34, 211, 238, 0.5);
+    outline: 3px solid rgba(8, 145, 178, 0.35);
     outline-offset: 2px;
 }
 
 #card_intro b {
     color: var(--accent-1);
     font-weight: 750;
+}
+
+@media (max-width: 560px) {
+    #subcard_enroll {
+        padding: 17px 16px 17px 20px;
+    }
+
+    #email-list {
+        gap: 8px;
+    }
+
+    .chip {
+        width: 100%;
+    }
+
+    .chip a {
+        flex: 1 1 auto;
+    }
+
+    .chip .copy {
+        flex: 0 0 auto;
+    }
 }
