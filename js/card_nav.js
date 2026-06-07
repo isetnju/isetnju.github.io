@@ -1,6 +1,9 @@
 const nav = document.querySelector('#nav');
+const header = document.querySelector('#card_header');
 const indicator = nav.querySelector('#indicator');
 const links = Array.from(nav.querySelectorAll('a'));
+let isHeaderCompact = false;
+let scrollTicking = false;
 
 function activeCards(navId) {
     const navActiveCards = {
@@ -30,6 +33,26 @@ function positionIndicator(activeEl) {
     indicator.style.transform = `translateX(${left}px)`;
 }
 
+function updateHeaderCompactState() {
+    if (!header) return;
+    const shouldCompact = window.scrollY > 72;
+    if (shouldCompact === isHeaderCompact) return;
+
+    isHeaderCompact = shouldCompact;
+    header.classList.toggle('is-compact', isHeaderCompact);
+    requestAnimationFrame(() => positionIndicator(nav.querySelector('a.active') || links[0]));
+    window.setTimeout(() => positionIndicator(nav.querySelector('a.active') || links[0]), 240);
+}
+
+function requestHeaderCompactUpdate() {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(() => {
+        updateHeaderCompactState();
+        scrollTicking = false;
+    });
+}
+
 function activateFromHash() {
     const hash = window.location.hash.substring(1);
     const validNavIds = ['home', 'research', 'pub', 'people', 'album'];
@@ -49,6 +72,7 @@ activateFromHash();
 
 positionIndicator(nav.querySelector('a.active') || links[0]);
 activeCards(nav.querySelector('a.active').id || links[0].id)
+updateHeaderCompactState();
 
 links.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -61,3 +85,8 @@ links.forEach(link => {
     });
 });
 
+window.addEventListener('scroll', requestHeaderCompactUpdate, { passive: true });
+window.addEventListener('resize', () => {
+    updateHeaderCompactState();
+    positionIndicator(nav.querySelector('a.active') || links[0]);
+});
