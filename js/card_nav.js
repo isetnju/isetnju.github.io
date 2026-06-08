@@ -2,7 +2,12 @@ const nav = document.querySelector('#nav');
 const header = document.querySelector('#card_header');
 const indicator = nav.querySelector('#indicator');
 const links = Array.from(nav.querySelectorAll('a'));
+const compactEnterMinScrollY = 260;
+const compactExitScrollY = 12;
+const compactTransitionMs = 280;
 let isHeaderCompact = false;
+let isHeaderTransitioning = false;
+let headerTransitionTimer = null;
 let scrollTicking = false;
 
 function activeCards(navId) {
@@ -35,13 +40,27 @@ function positionIndicator(activeEl) {
 
 function updateHeaderCompactState() {
     if (!header) return;
-    const shouldCompact = window.scrollY > 72;
+    if (isHeaderTransitioning) return;
+
+    const compactEnterScrollY = Math.max(
+        compactEnterMinScrollY,
+        Math.round(header.getBoundingClientRect().height + 48)
+    );
+    const shouldCompact = isHeaderCompact
+        ? window.scrollY > compactExitScrollY
+        : window.scrollY > compactEnterScrollY;
     if (shouldCompact === isHeaderCompact) return;
 
     isHeaderCompact = shouldCompact;
+    isHeaderTransitioning = true;
     header.classList.toggle('is-compact', isHeaderCompact);
     requestAnimationFrame(() => positionIndicator(nav.querySelector('a.active') || links[0]));
     window.setTimeout(() => positionIndicator(nav.querySelector('a.active') || links[0]), 240);
+    window.clearTimeout(headerTransitionTimer);
+    headerTransitionTimer = window.setTimeout(() => {
+        isHeaderTransitioning = false;
+        requestHeaderCompactUpdate();
+    }, compactTransitionMs);
 }
 
 function requestHeaderCompactUpdate() {
