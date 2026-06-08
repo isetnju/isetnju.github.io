@@ -78,6 +78,10 @@
     font-size: 13px;
 }
 
+#card_graduation .grid-card-content>p>a:not(.people-name):not(.people-title) {
+    color: var(--text-3);
+}
+
 .teacher-item {
     display: grid;
     justify-items: center;
