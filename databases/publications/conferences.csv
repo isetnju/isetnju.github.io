@@ -30,3 +30,4 @@ AEA: Adaptive Expert Allocation Improves Sentence Embeddings from Mixture-of-Exp
 Focusing Condition: Inference-Time Self-Contrastive Steering Elicits Better Conditional Text Embeddings in LLMs,Zifeng Cheng;Lingyun Qian;Zhiwei Jiang;Cong Wang;Yafeng Yin;Fei Shen;Ao Zhou;Qing Gu,,Zhiwei Jiang,ACL,2026,2026,4,7
 Multi-Label Test-Time Adaptation with Bayesian Conditional Priors,Qiru Li;Ao Zhou;Zhiwei Jiang;Zifeng Cheng;Cong Wang;Yafeng Yin;Qing Gu,Qiru Li;Ao Zhou,Zhiwei Jiang,ICML,2026,2026,5,1
 ScaleErasure: Inference-Time Minimal Intervention for Precise Concept Erasure in Next-Scale Autoregressive Image Generation,Cong Wang;Haiyu Wu;Zhiwei Jiang;Zifeng Cheng;Fei Shen;Yafeng Yin;Qing Gu,Cong Wang;Haiyu Wu,Zhiwei Jiang,ICML,2026,2026,5,1
+Dynamic Distribution-Aware Uncertainty Tracking in Vision-Language Representation Learning,Ao Zhou;Zhiwei Jiang;Zifeng Cheng;Cong Wang;Shufan Yang;Haoru Chen;Qing Gu,,Zhiwei Jiang,MM,2026,2026,7,10
