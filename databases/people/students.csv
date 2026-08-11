@@ -30,7 +30,7 @@ NAME,NAME_EN,DEGREE,CLASS,ENROLLMENT,GRADUATION_YEAR,DESTINATION,HOMEPAGE_URL
 程紫峰,Zifeng Cheng,D,0,2021,2025,南京大学,https://zifengcheng.github.io/
 葛士平,Shiping Ge,D,0,2021,2025,南京邮电大学,https://shipingge.github.io/
 王聪,Cong Wang,D,0,2021,2025,南京大学,https://tenvence.github.io/
-符宇辰,Yuchen Fu,D,,2022,2026,X,
+符宇辰,Yuchen Fu,D,,2022,2026,扬州大学,
 邓泽轩,Zexuan Deng,M,,2023,2026,腾讯,
 王锦国,,M,,2023,2026,科技局,
 刘玉梁,Yuliang Liu,D,0,2024,,,
@@ -39,9 +39,6 @@ NAME,NAME_EN,DEGREE,CLASS,ENROLLMENT,GRADUATION_YEAR,DESTINATION,HOMEPAGE_URL
 钱凌云,,M,,2024,,,
 孙长辉,,M,,2024,,,
 梁一恒,,M,,2024,,,
-# 叶子洋,,M,,2024,2026,广发证劵,
-成丹琳,,M,,2024,2026,X,
-王忠辉,Zhonghui Wang,M,,2024,2026,华为,
 周翱,Ao Zhou,D,,2025,,,
 罗翔,,D,,2025,,,
 吴文翔,,D,1,2025,,,
@@ -49,9 +46,3 @@ NAME,NAME_EN,DEGREE,CLASS,ENROLLMENT,GRADUATION_YEAR,DESTINATION,HOMEPAGE_URL
 张俊杰,,D,1,2025,,,
 李奇儒,Qiru Li,M,,2025,,,
 吴海宇,Haiyu Wu,M,,2025,,,
-王皓,,M,,2025,,,
-赵展鹏,,M,,2025,,,
-祁青峰,,M,,2025,,,
-倪建乔,,M,,2025,,,
-朱嘉铭,,M,,2025,,,
-徐思恬,,M,,2025,,,
