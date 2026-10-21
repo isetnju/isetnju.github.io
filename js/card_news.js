@@ -14,6 +14,7 @@ const loadCSVs = files => Promise.all(
             download: true,
             header: true,
             dynamicTyping: true,
+            skipEmptyLines: 'greedy',
             complete: res => resolve(res.data),
             error: reject
         })
